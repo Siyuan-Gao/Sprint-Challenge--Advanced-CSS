@@ -46,17 +46,23 @@
     display: flex;
     justify-content: center;
 
-    .walk-image{
-      @media @phone {
-        width:90%;
-      }
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      height: auto;
+
+    }
+ 
     }
     
     .walk-text {
       width: 50%;
 
       @media @phone {
+    
         width: 100%;
+        height: auto;
       }
 
       h3 {
@@ -76,19 +82,14 @@
         border-radius: 10%  ;
 
         @media @phone{
-          width: 90%;
+          width: 95%;
+          padding: 5%;
         }
 
       }
       :hover{
         background: purple;
         font-size: 2.5rem;
-      }
-
-      @media @phone{
-        display: flex;
-        flex-direction: column;
-
       }
   
     }
@@ -97,11 +98,12 @@
       margin-left: 4%;
 
       @media @phone {
-        width: 100%;
+        width: 100vw;
       }
     }
   }
-}// home
+
+ // home
 
 
 
@@ -116,9 +118,9 @@
   border-radius: 20px;
 
   @media @phone{
-    position:relative;
-    width: 500px;
-    margin: 0 auto;
+    display: block;
+    width: 100%;
+
   }
 }
 
